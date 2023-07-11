@@ -11,12 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <title>CoffeMeet</title>
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Header -->
     <header class="navbar">
       <div class="container">
         <div class="navbar__top">
@@ -59,20 +59,20 @@
           <!-- /.navbar__menu -->
           <div class="navbar__image">
             <img
-              src="./img/coffee-logo-header.png"
+              src="../img/coffee-logo-header.png"
               alt="Logo: Coffee"
               class="navbar__logo"
             />
           </div>
           <!-- /.navbar__image -->
           <div class="navbar__actions">
-            <a href="#"><img src="./img/user-1.svg" alt="Icon: user" /></a>
+            <a href="#"><img src="../img/user-1.svg" alt="Icon: user" /></a>
             <a href="#"
-              ><img src="./img/favorite-1.svg" alt="Icon: favorite"
+              ><img src="../img/favorite-1.svg" alt="Icon: favorite"
             /></a>
             <div class="navbar__actions-cart">
-              <a href="#"><img src="./img/cart-1.svg" alt="Icon: cart" /></a>
-              <img src="./img/ellipse-1.png" alt="Icon: ellipse" />
+              <a href="#"><img src="../img/cart-1.svg" alt="Icon: cart" /></a>
+              <img src="../img/ellipse-1.png" alt="Icon: ellipse" />
             </div>
           </div>
           <!-- /.navbar__actions -->
@@ -80,9 +80,13 @@
         <!-- /.navbar__bottom -->
       </div>
       <!-- /.navbar__container -->
+      <hr class="separator" />
     </header>
+    <!-- /.navbar -->
 
-    <hr class="separator" />
+    <!-- Cards -->
+
+    <!-- Content -->
 
     <!-- Intro -->
     <section class="intro">
@@ -109,7 +113,7 @@
       <div class="container">
         <div class="banner__content">
           <div class="banner__image">
-            <img src="./img/roasted-coffee.png" alt="Photo: Coffee" />
+            <img src="../img/roasted-coffee.png" alt="Photo: Coffee" />
           </div>
           <div class="banner__text">
             <h3 class="banner__title">Roasted Coffee</h3>
@@ -138,18 +142,87 @@
         <div class="products__content">
           <div class="product-card">
             <img
-              src="./img/product1.png"
+              src="../img/product1.png"
               alt="Photo: product"
               class="product-card__image"
             />
-            <h3 class="product-card__title">Lavazza coffee</h3>
+            <a href="card.html" class="product-card__link">
+              <h3 class="product-card__title">Lavazza coffee</h3>
+            </a>
             <div class="product-card__info">
               <div class="product-card__price">
                 <span class="product-card__price--new">$19.99</span>
                 <span class="product-card__price--old">$29.99</span>
               </div>
               <img
-                src="./img/favorite-1.svg"
+                src="../img/favorite-1.svg"
+                alt="Icon: favorite"
+                class="product-card__favorite-icon"
+              />
+            </div>
+          </div>
+          <!-- /.product-card -->
+          <div class="product-card">
+            <img
+              src="../img/product2.png"
+              alt="Photo: product"
+              class="product-card__image"
+            />
+            <a href="card.html" class="product-card__link">
+              <h3 class="product-card__title">Lavazza coffee</h3>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__price">
+                <span class="product-card__price--new">$19.99</span>
+                <span class="product-card__price--old">$29.99</span>
+              </div>
+              <img
+                src="../img/favorite-1.svg"
+                alt="Icon: favorite"
+                class="product-card__favorite-icon"
+              />
+            </div>
+          </div>
+          <!-- /.product-card -->
+          <div class="product-card">
+            <img
+              src="../img/product1.png"
+              alt="Photo: product"
+              class="product-card__image"
+            />
+            <a href="card.html" class="product-card__link">
+              <h3 class="product-card__title">Lavazza coffee</h3>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__price">
+                <span class="product-card__price--new">$19.99</span>
+                <span class="product-card__price--old">$29.99</span>
+              </div>
+              <img
+                src="../img/favorite-1.svg"
+                alt="Icon: favorite"
+                class="product-card__favorite-icon"
+              />
+            </div>
+          </div>
+          <!-- /.product-card -->
+
+          <div class="product-card">
+            <img
+              src="../img/product1.png"
+              alt="Photo: product"
+              class="product-card__image"
+            />
+            <a href="card.html" class="product-card__link"
+              ><h3 class="product-card__title">Lavazza coffee</h3></a
+            >
+            <div class="product-card__info">
+              <div class="product-card__price">
+                <span class="product-card__price--new">$19.99</span>
+                <span class="product-card__price--old">$29.99</span>
+              </div>
+              <img
+                src="../img/favorite-1.svg"
                 alt="Icon: favorite"
                 class="product-card__favorite-icon"
               />
@@ -158,18 +231,20 @@
           <!-- /.product-card -->
           <div class="product-card product-card--active">
             <img
-              src="./img/product2.png"
+              src="../img/product2.png"
               alt="Photo: product"
               class="product-card__image"
             />
-            <h3 class="product-card__title">Lavazza coffee</h3>
+            <a href="card.html" class="product-card__link">
+              <h3 class="product-card__title">Lavazza coffee</h3>
+            </a>
             <div class="product-card__info">
               <div class="product-card__price">
                 <span class="product-card__price--new">$19.99</span>
                 <span class="product-card__price--old">$29.99</span>
               </div>
               <img
-                src="./img/favorite-1.svg"
+                src="../img/favorite-1.svg"
                 alt="Icon: favorite"
                 class="product-card__favorite-icon"
               />
@@ -178,78 +253,20 @@
           <!-- /.product-card -->
           <div class="product-card">
             <img
-              src="./img/product1.png"
+              src="../img/product1.png"
               alt="Photo: product"
               class="product-card__image"
             />
-            <h3 class="product-card__title">Lavazza coffee</h3>
+            <a href="card.html" class="product-card__link">
+              <h3 class="product-card__title">Lavazza coffee</h3>
+            </a>
             <div class="product-card__info">
               <div class="product-card__price">
                 <span class="product-card__price--new">$19.99</span>
                 <span class="product-card__price--old">$29.99</span>
               </div>
               <img
-                src="./img/favorite-1.svg"
-                alt="Icon: favorite"
-                class="product-card__favorite-icon"
-              />
-            </div>
-          </div>
-          <!-- /.product-card -->
-          <div class="product-card">
-            <img
-              src="./img/product1.png"
-              alt="Photo: product"
-              class="product-card__image"
-            />
-            <h3 class="product-card__title">Lavazza coffee</h3>
-            <div class="product-card__info">
-              <div class="product-card__price">
-                <span class="product-card__price--new">$19.99</span>
-                <span class="product-card__price--old">$29.99</span>
-              </div>
-              <img
-                src="./img/favorite-1.svg"
-                alt="Icon: favorite"
-                class="product-card__favorite-icon"
-              />
-            </div>
-          </div>
-          <!-- /.product-card -->
-          <div class="product-card">
-            <img
-              src="./img/product2.png"
-              alt="Photo: product"
-              class="product-card__image"
-            />
-            <h3 class="product-card__title">Lavazza coffee</h3>
-            <div class="product-card__info">
-              <div class="product-card__price">
-                <span class="product-card__price--new">$19.99</span>
-                <span class="product-card__price--old">$29.99</span>
-              </div>
-              <img
-                src="./img/favorite-1.svg"
-                alt="Icon: favorite"
-                class="product-card__favorite-icon"
-              />
-            </div>
-          </div>
-          <!-- /.product-card -->
-          <div class="product-card">
-            <img
-              src="./img/product1.png"
-              alt="Photo: product"
-              class="product-card__image"
-            />
-            <h3 class="product-card__title">Lavazza coffee</h3>
-            <div class="product-card__info">
-              <div class="product-card__price">
-                <span class="product-card__price--new">$19.99</span>
-                <span class="product-card__price--old">$29.99</span>
-              </div>
-              <img
-                src="./img/favorite-1.svg"
+                src="../img/favorite-1.svg"
                 alt="Icon: favorite"
                 class="product-card__favorite-icon"
               />
@@ -270,7 +287,7 @@
         <div class="news__content">
           <div class="news-card">
             <img
-              src="./img/coffee-1.png"
+              src="../img/coffee-1.png"
               alt="Photo: coffee"
               class="news-card__image"
             />
@@ -287,7 +304,7 @@
           <!-- /.news-card -->
           <div class="news-card">
             <img
-              src="./img/coffee-2.png"
+              src="../img/coffee-2.png"
               alt="Photo: coffee"
               class="news-card__image"
             />
@@ -305,7 +322,7 @@
           <!-- /.news-card -->
           <div class="news-card">
             <img
-              src="./img/coffee-3.png"
+              src="../img/coffee-3.png"
               alt="Photo: coffee"
               class="news-card__image"
             />
@@ -327,15 +344,14 @@
     </section>
     <!-- /.news -->
 
-    <hr class="separator" />
-
     <!-- Footer -->
+    <hr class="separator" />
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
           <div class="footer__logo">
             <img
-              src="./img/coffee-logo-footer.png"
+              src="../img/coffee-logo-footer.png"
               alt="Logo: Coffee"
               class="footer__logo-img"
             />

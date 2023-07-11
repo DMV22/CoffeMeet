@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>CoffeMeet</title>
+  </head>
+  <body>
+    <!-- Header -->
+    {% include 'parts/header.html' %}
+    <!-- Cards -->
+    {% block cards %}{% endblock %}
+    <!-- Content -->
+    {% block content %}{% endblock %}
+    <!-- Products -->
+    <section class="products">
+      <div class="container">
+        <h2 class="products__catalog">Catalog</h2>
+        <div class="products__content">
+          <div class="product-card">
+            <img
+              src="../img/product1.png"
+              alt="Photo: product"
+              class="product-card__image"
+            />
+            <a href="card.html" class="product-card__link">
+              <h3 class="product-card__title">Lavazza coffee</h3>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__price">
+                <span class="product-card__price--new">$19.99</span>
+                <span class="product-card__price--old">$29.99</span>
+              </div>
+              <img
+                src="../img/favorite-1.svg"
+                alt="Icon: favorite"
+                class="product-card__favorite-icon"
+              />
+            </div>
+          </div>
+          <!-- /.product-card -->
+          <div class="product-card">
+            <img
+              src="../img/product2.png"
+              alt="Photo: product"
+              class="product-card__image"
+            />
+            <a href="card.html" class="product-card__link">
+              <h3 class="product-card__title">Lavazza coffee</h3>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__price">
+                <span class="product-card__price--new">$19.99</span>
+                <span class="product-card__price--old">$29.99</span>
+              </div>
+              <img
+                src="../img/favorite-1.svg"
+                alt="Icon: favorite"
+                class="product-card__favorite-icon"
+              />
+            </div>
+          </div>
+          <!-- /.product-card -->
+          <div class="product-card">
+            <img
+              src="../img/product1.png"
+              alt="Photo: product"
+              class="product-card__image"
+            />
+            <a href="card.html" class="product-card__link">
+              <h3 class="product-card__title">Lavazza coffee</h3>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__price">
+                <span class="product-card__price--new">$19.99</span>
+                <span class="product-card__price--old">$29.99</span>
+              </div>
+              <img
+                src="../img/favorite-1.svg"
+                alt="Icon: favorite"
+                class="product-card__favorite-icon"
+              />
+            </div>
+          </div>
+          <!-- /.product-card -->
+          {% block products %}{% endblock %}
+        </div>
+        <!-- /.products__grid -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.products -->
+
+    {% block news %}{% endblock %}
+    <!-- Footer -->
+    {% include 'parts/footer.html' %}
+  </body>
+</html>

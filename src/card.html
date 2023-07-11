@@ -1,0 +1,63 @@
+{% extends 'layouts/default.html' %} {% block cards %}
+<section class="cards">
+  <div class="container">
+    <h2 class="cards__title">Lavazza Crema E Gusto</h2>
+    <div class="card">
+      <img
+        src="../img/product-big-1.png"
+        alt="Photo: product"
+        class="card-image"
+      />
+      <div class="card-info">
+        <div class="card-info__price">
+          <span class="card-info__price--new">$19.99</span>
+          <span class="card-info__price--old">$29.99</span>
+        </div>
+        <div class="card-info__size">
+          <button class="card-info__size-btn">L</button>
+          <button class="card-info__size-btn">XL</button>
+          <button class="card-info__size-btn">XXL</button>
+        </div>
+        <a href="#" class="card-info__btn">Add to cart</a>
+      </div>
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.cards -->
+
+<!-- Description -->
+<section class="description">
+  <div class="container">
+    <h4 class="description-title">Description</h4>
+    <ul class="description-info">
+      <li class="description-info__item">
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable. If you are
+        going to use a passage of Lorem Ipsum, you need to be sure there isn't
+        anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+        generators on the Internet tend to repeat predefined chunks as
+        necessary, making this the first true generator on the Internet.
+      </li>
+      <li class="description-info__item">
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable.
+      </li>
+      <li class="description-info__item">
+        If you are going to use a passage of Lorem Ipsum, you need to be sure
+        there isn't anything embarrassing hidden in the middle of text.
+      </li>
+      <li class="description-info__item">
+        All the Lorem Ipsum generators on the Internet tend to repeat predefined
+        chunks as necessary, making this the first true generator on the
+        Internet.
+      </li>
+    </ul>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.description -->
+{% endblock %}
